@@ -1,0 +1,214 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fdf4f1;
+      color: #333;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4d9cd;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .hero-text h1 span {
+      color: #000;
+    }
+
+    .hero-text h2 {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
+
+    .hero-text p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      background: #000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero-img img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    /* PRODUCTOS */
+    .productos {
+      padding: 2rem;
+      background: #fff;
+    }
+
+    .productos h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .producto {
+      background: #f8e9e3;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .producto img {
+      width: 150px;
+      margin-bottom: 0.5rem;
+    }
+
+    .producto p {
+      margin: 0.5rem 0;
+    }
+
+    .producto button {
+      background: #000;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .oferta::before {
+      content: "Oferta";
+      display: block;
+      font-size: 0.75rem;
+      color: red;
+      font-weight: bold;
+    }
+
+    /* CATEGORÍAS */
+    .categorias {
+      background: #fdf1ec;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .grid-categorias {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .categoria {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .categoria img {
+      width: 150px;
+      margin-bottom: 0.5rem;
+    }
+
+    .categoria p {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #f8e1da;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .redes a img {
+      width: 50px;
+      margin: 0 8px;
+      transition: transform 0.3s;
+    }
+
+    .redes a:hover img {
+      transform: scale(1.1);
+    }
+/* SLIDER */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff5f3;
+}
+
+.slider {
+  width: 25%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 18s infinite;
+}
+
+.slides img {
+  width: 100vw; /* imagen del ancho total de la ventana */
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+.indicadores {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.punto {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.punto.activo {
+  background-color: #e91e63;
+}

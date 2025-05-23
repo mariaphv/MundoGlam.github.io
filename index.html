@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mundo Glam Makeup</title>
+    <link rel="stylesheet" href="styleglam.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>MUNDO <span>GLAM</span><br><small>MAKEUP</small></h1>
+      <h2>Resalta tu belleza natural</h2>
+      <p>Descubre nuestra nueva línea de soft touch shadows</p>
+      <button>Comprar ahora</button>
+    </div>
+    <div class="hero-img">
+      <img src="imagenes glam/atenea 2.PNG" alt="Modelo maquillaje" />
+    </div>
+  </header>
+  <!-- SLIDER AUTOMÁTICO -->
+<section class="slider-container">
+  <div class="slider">
+    <div class="slides">
+      <img src="imagenes glam/atenea 1.PNG" alt="kit de brochas">
+      <img src="imagenes glam/montoc 1.PNG" alt="shimmer mist montoc">
+      <img src="imagenes glam/rubyrose 1.PNG" alt="colección chicas superpoderosas">
+      <img src="imagenes glam/montoc 2.PNG" alt="xxx">
+    </div>
+  </div>
+  <div class="indicadores">
+    <span class="punto activo"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+  </div>
+</section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="productos">
+    <h3>Más vendidos</h3>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="imagenes glam/atenea base.PNG" alt="Base" />
+        <p>Serum tinted<br><strong>$66.000</strong></p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes glam/trendy aura.PNG" alt="gloss aura" />
+        <p>Gloss aura<br><strong>$20.000</strong></p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto oferta">
+        <img src="imagenes glam/samy 1.PNG" alt="Paleta" />
+        <p>Paleta de sombras sun shine<br><strong>$43.200</strong></p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes glam/maybelline 1.PNG" alt="Mascara" />
+        <p>Volum Express Pumped Up! Máscara Colossal<br><strong>$31.900</strong></p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categorias">
+    <h3>Categorías</h3>
+    <div class="grid-categorias">
+      <div class="categoria">
+        <img src="imagenes glam/rostro.PNG" alt="Rostro" />
+        <a href="C:\Users\Hernán\Downloads\maria pillimue html\mundo glam\rostro.html"><p>Rostro</p></a>
+      </div>
+      <div class="categoria">
+        <img src="imagenes glam/labios.jpg" alt="Labios" />
+        <a href="C:\Users\Hernán\Downloads\maria pillimue html\mundo glam\labios.html"><p>Labios</p></a>
+      </div>
+      <div class="categoria">
+        <img src="imagenes glam/ojos.PNG" alt="Ojos" />
+        <a href="C:\Users\Hernán\Downloads\maria pillimue html\mundo glam\ojos.html"><p>Ojos</p></a>
+      </div>
+      <div class="categoria">
+        <img src="imagenes glam/accesorios.jpg" alt="Accesorios" />
+        <a href=""><p>Accesorios</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Mundo Glam - Todos los derechos reservados</p>
+      <div class="redes">
+        <a href="#"><img src="imagenes glam/face logo.webp" alt="Facebook"></a>
+        <a href="#"><img src="imagenes glam/insta.webp" alt="Instagram"></a>
+        <a href="#"><img src="imagenes glam/tiktok logo.webp" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+<script>
+  const puntos = document.querySelectorAll(".punto");
+  let index = 0;
+
+  setInterval(() => {
+    puntos.forEach((punto, i) => {
+      punto.classList.toggle("activo", i === index);
+    });
+
+    index = (index + 1) % puntos.length;
+  }, 6000); // Cambia cada 6 segundos (ajusta según tu slider)
+</script>
+</body>
+</html>
